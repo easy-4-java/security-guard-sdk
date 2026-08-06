@@ -2,8 +2,6 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-![Java](https://img.shields.io/badge/Java-17-orange) ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
-
 安全防护（风控/反滥用）SDK 的项目骨架。在 `2.0.x.x.20260630-SNAPSHOT` 快照上，仓库中仅包含 Maven 工程骨架，尚未加入任何生产代码。
 
 ## 目录

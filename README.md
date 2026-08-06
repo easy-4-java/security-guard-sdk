@@ -1,6 +1,6 @@
 # security-guard-sdk
 
-![Java](https://img.shields.io/badge/Java-17-orange) ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
+[English](./README.md) | [简体中文](./README.zh-CN.md)
 
 Project scaffold for a security guard / anti-abuse SDK. As of the `2.0.x.x.20260630-SNAPSHOT` snapshot the repository contains the Maven project skeleton only — no production code has been added yet.
 
