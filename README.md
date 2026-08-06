@@ -2,6 +2,8 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
+[![Java](https://img.shields.io/badge/Java-21-orange)](https://github.com/easy-4-java/security-guard-sdk) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://www.apache.org/licenses/LICENSE-2.0.txt)
+
 Project scaffold for a security guard / anti-abuse SDK. As of the `3.0.x.x.20260630-SNAPSHOT` snapshot the repository contains the Maven project skeleton only — no production code has been added yet.
 
 ## Table of Contents
