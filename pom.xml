@@ -39,12 +39,10 @@
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.version>4.0.0-rc-5</maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <!-- ═══ Dependency versions（自然排序）═══ -->
         <junit-jupiter.version>6.1.0</junit-jupiter.version>
         <lombok.version>1.18.46</lombok.version>
         <slf4j.version>2.0.18</slf4j.version>
-
         <!-- ═══ Maven Plugin versions（自然排序）═══ -->
         <maven-central-publishing-plugin.version>0.11.0</maven-central-publishing-plugin.version>
         <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
@@ -55,14 +53,12 @@
     </properties>
     <dependencyManagement>
         <dependencies>
-
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
             </dependency>
-
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
@@ -71,13 +67,11 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -98,9 +92,7 @@
     <build>
         <pluginManagement>
             <plugins>
-
                 <plugin>
-
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
@@ -111,9 +103,7 @@
             </plugins>
         </pluginManagement>
         <plugins>
-
             <plugin>
-
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${maven-jacoco-plugin.version}</version>
@@ -155,19 +145,14 @@
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
-
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
                     <release>${java.version}</release>
-
                     <parameters>true</parameters>
-
                     <encoding>${project.build.sourceEncoding}</encoding>
-
                     <maxmem>512M</maxmem>
                     <annotationProcessorPaths>
                         <path>
@@ -178,9 +163,7 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
-
             <plugin>
-
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>${maven-javadoc-plugin.version}</version>
@@ -197,9 +180,7 @@
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
-
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>${maven-source-plugin.version}</version>
@@ -216,14 +197,11 @@
     </build>
     <!-- 构建 Profile 配置 -->
     <profiles>
-
         <profile>
             <id>central</id>
             <build>
                 <plugins>
-
                     <plugin>
-
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                         <version>${maven-gpg-plugin.version}</version>
@@ -237,9 +215,7 @@
                             </execution>
                         </executions>
                     </plugin>
-
                     <plugin>
-
                         <groupId>org.sonatype.central</groupId>
                         <artifactId>central-publishing-maven-plugin</artifactId>
                         <version>${maven-central-publishing-plugin.version}</version>
